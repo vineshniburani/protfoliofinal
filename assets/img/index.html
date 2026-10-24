@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Vinesh Niburani | AI & Data Science</title>
+</head>
+
+<body>
+    <div class="boot" id="boot" aria-hidden="true">
+        <div class="boot__box">
+            <p class="boot__line" id="boot-line">booting up...</p>
+            <div class="boot__bar"><span id="boot-fill"></span></div>
+        </div>
+    </div>
+    <div class="progress" id="progress"></div>
+    <div class="cursor" id="cursor"></div>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-circle" id="logo-circle" title="Click me">V</span>
+                <span class="nav__logo-name">Vinesh Niburani.</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <span class="nav__title">Menu</span>
+
+                <h3 class="nav__name">Vinesh</h3>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link ">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Me</a>
+                    </li>
+
+
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link ">Projects</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
+                    </li>
+                </ul>
+
+
+                <!--close button-->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+
+                <!-- theme button-->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <!--toggle button-->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <canvas class="net" id="net"></canvas>
+            <div class="home__container container grid">
+                <h1 class="home__name">
+                    Vinesh Niburani
+                </h1>
+                <div class="home__perfil">
+                    <div class="home__image">
+                        <img src="./assets/img/profpic1.jpg" alt="Portrait of Vinesh Niburani in a navy blazer" class="home__img">
+                        <div class="home__shadow"></div>
+
+
+                        <img src="./assets/img/curved-arrow.svg" alt="" class="home__arrow">
+                        <img src="./assets/img/random-lines.svg" alt="" class="home__line">
+
+                        <div class="geometric-box"></div>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.instagram.com/vinesh_niburani" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        
+                        </a>
+                        <a href="https://www.linkedin.com/in/vinesh-niburani" target="_blank" class="home__social-link">
+
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://github.com/vineshniburani" target="_blank" class="home__social-link">
+                            <i class="ri-github-line"></i>
+                        
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__info">
+                    <p class="home__description">
+                        I'm a 3rd-year <b>AI & Data Science</b> student. I teach machines
+                        to see patterns, then build things around what they find.
+                        <span class="typed-wrap">Currently: <span class="typed" id="typed"></span><span class="caret"></span></span>
+                    </p>
+
+                    <a href="#about" class="home__scroll">
+                        <div class="home__scroll-box">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+
+                        <span class="home__scroll-text">Scroll Down</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container container grid">
+                <h2 class="section__title-1">
+                   <span>About me.</span>
+                </h2>
+
+                <div class="about__perfil">
+                    <div class="about__image">
+                        <img src="./assets/img/ABOUTIMG1.jpg" alt="Vinesh Niburani adjusting his blazer" class="about__img">
+
+                        <div class="about__shadow"></div>
+
+                        <div class="geometric-box"></div>
+                        <img src="./assets/img/random-lines.svg" alt="" class="about__line">
+                        <div class="about__box"></div>
+                    </div>
+                </div>
+                <div class="about__info">
+                    <p class="about__description">
+                        I'm a 3rd-year <b>AI & Data Science</b> student who can't leave a hard problem alone. I train <b>models</b>, wrangle <b>data</b>, and build the interfaces that make both usable. I move fast, learn faster, and aim to build AI that is useful, not just impressive.
+                    </p>
+
+                    <ul class="about__list"><!-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------to b cahnged-->
+                        <li class="about__item">
+                            <b>Toolkit (hover me):</b>
+                            <span class="chips">
+                                <span class="chip">Python</span><span class="chip">Machine Learning</span><span class="chip">Data Analysis</span><span class="chip">JavaScript</span><span class="chip">HTML & CSS</span><span class="chip">Git & GitHub</span><span class="chip">C</span><span class="chip">Java</span>
+                            </span>
+                        </li>
+                    </ul>
+
+                   <div class="stats">
+                        <div class="stat"><b data-count="3">0</b><span>year student</span></div>
+                        <div class="stat"><b data-count="6">0</b><span>certificates</span></div>
+                        <div class="stat"><b data-count="4">0</b><span>projects shipped</span></div>
+                        <div class="stat"><b data-count="100" data-suffix="%">0</b><span>curiosity</span></div>
+                    </div>
+
+                   <div class="leader">
+                        <figure class="polaroid polaroid--cert polaroid--tilt-l" data-open-case="smartscan" role="button" tabindex="0" aria-label="Open the SmartScan Attend case study">
+                            <img src="./assets/img/sih-certificates.jpg" alt="Vinesh and ma'am holding their SIH certificates of participation" loading="lazy">
+                            <figcaption>SIH 2025</figcaption>
+                        </figure>
+                        <div class="leader__text">
+                            <h4 class="leader__title">Team Leader, SIH 2025</h4>
+                            <p>I led our team to the top 75 at Smart India Hackathon 2025 with SmartScan Attend. Great people make great projects.</p>
+                            <a href="#projects" class="leader__link" data-open-case="smartscan">Read the story <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                   <div class="about__buttons">
+                    <a href="#contact" class="button">
+                        <i class="ri-send-plane-line"></i>
+                        Contact Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/vinesh-niburani" target="_blank" class="button__ghost">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                   </div> 
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title-2"> 
+                <span>Achievements.</span>
+            </h2>
+
+            <div class="services__container container">
+                <article class="services__card">
+                    <div class="services__border"></div>
+
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <div class="services__box"></div>
+                            <i class="ri-html5-line"></i>
+                            <i class="ri-css3-line"></i>
+                        </div>
+
+                        <h2 class="services__title">HTML & CSS</h2>
+
+                        <p class="services__description">
+                          <img src="./assets/img/htmlcsscert.png" alt="HTML and CSS certificate, IT Specialist (Certiport)">
+                        </p>
+                    </div>
+                </article>
+                <article class="services__card">
+                    <div class="services__border"></div>
+
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <div class="services__box"></div>
+                            <i class="ri-award-line"></i>
+                        </div>
+
+                        <h2 class="services__title">Python</h2>
+
+                        <p class="services__description">
+                          <img src="./assets/img/cert2.png" alt="Python certificate, IBM Developer Skills Network">
+                        </p>
+                    </div>
+                </article>
+                <article class="services__card">
+                    <div class="services__border"></div>
+
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <div class="services__box"></div>
+                            <i class="ri-award-line"></i>
+                        </div>
+
+                        <h2 class="services__title">JavaScript</h2>
+
+                        <p class="services__description">
+                          <img src="./assets/img/cert3.png" alt="JavaScript certificate, IT Specialist (Certiport)">
+                        </p>
+                    </div>
+                </article>
+
+                <article class="services__card">
+                    <div class="services__border"></div>
+
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <div class="services__box"></div>
+                            <i class="ri-cloud-line"></i>
+                        </div>
+
+                        <h2 class="services__title">AWS Cloud Foundations</h2>
+
+                        <p class="services__description">
+                          <img src="./assets/img/awsacademy.png" alt="AWS Academy Graduate, Cloud Foundations training badge (20 hours)">
+                        </p>
+                    </div>
+                </article>
+                <article class="services__card">
+                    <div class="services__border"></div>
+
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <div class="services__box"></div>
+                            <i class="ri-cloud-line"></i>
+                        </div>
+
+                        <h2 class="services__title">AWS Cloud Practitioner Essentials</h2>
+
+                        <p class="services__description">
+                          <img src="./assets/img/awscloudpractitioner.png" alt="AWS Cloud Practitioner Essentials completion certificate, AWS Skill Builder">
+                        </p>
+                    </div>
+                </article>
+                <article class="services__card">
+                    <div class="services__border"></div>
+
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <div class="services__box"></div>
+                            <i class="ri-bar-chart-box-line"></i>
+                        </div>
+
+                        <h2 class="services__title">Statistics 101</h2>
+
+                        <p class="services__description">
+                          <img src="./assets/img/ibmstats101.png" alt="Statistics 101 certificate, IBM Developer Skills Network">
+                        </p>
+                    </div>
+                </article>
+
+                <!-- <article class="services__card">
+                    <div class="services__border"></div>
+
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <div class="services__box"></div>
+                            <i class="ri-code-box-line"></i>
+                        </div>
+
+                        <h2 class="services__title">Development</h2>
+
+                        <p class="services__description">
+                            Custom web development tailored to your 
+                            specifications, designed to provide a 
+                            flawless user experience.
+                        </p>
+                    </div>
+                </article>  -->
+                <!-- <article class="services__card">
+                    <div class="services__border"></div>
+
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <div class="services__box"></div>
+                            <i class="ri-smartphone-line"></i>
+                        </div>
+
+                        <h2 class="services__title">Mobile App</h2>
+
+                        <p class="services__description">
+                            Design and transform website projects 
+                            into mobile apps to provide a seamless
+                            user experience.
+                        </p>
+                    </div>
+                </article> -->
+            </div>
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+         <h2 class="section__title-1">
+             <span>Projects.</span>
+         </h2>
+
+         <div class="projects__container container grid">
+            <article class="projects__card" data-project="smartscan">
+                <div class="projects__image">
+                    <img src="./assets/img/smartscan.png" alt="SmartScan Attend homepage screenshot" class="projects__image">
+
+                    <a href="https://smartscanbyvn.netlify.app" target="_blank" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">AI / Computer Vision · SIH 2025</h3>
+                    <h2 class="projects__title">SmartScan Attend</h2>
+
+                    <p class="projects__description">
+                        An automated attendance system that uses face recognition to eliminate proxy attendance and give teachers instant analytics. Built for Smart India Hackathon 2025, where our team ranked in the top 75.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://smartscanbyvn.netlify.app" target="_blank" class="projects__link">
+                        <i class="ri-external-link-line"></i>Live demo
+                    </a>
+                    <a href="https://github.com/vineshniburani" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i>GitHub
+                    </a>
+                </div>
+            </article>
+            <article class="projects__card" data-project="pscanner">
+                <div class="projects__image">
+                    <img src="./assets/img/pscanner.png" alt="PScanner extension popup listing a detected PDF on the Parul University e-learning portal" class="projects__image">
+
+                    <a href="https://github.com/vineshniburani/pscanner-site" target="_blank" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">Browser Extension / JavaScript</h3>
+                    <h2 class="projects__title">PScanner</h2>
+
+                    <p class="projects__description">
+                        A Chrome extension that detects the PDFs your browser already receives on the Parul University e-learning portal and lets you download one or all of them in a click. It never bypasses logins or protection.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://github.com/vineshniburani/pscanner-site" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i>GitHub
+                    </a>
+                </div>
+            </article>
+            <article class="projects__card" data-project="amazon">
+                <div class="projects__image">
+                    <img src="./assets/img/amazonclone.png" alt="Amazon clone homepage screenshot" class="projects__image">
+
+                    <a href="#" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">Web / Frontend</h3>
+                    <h2 class="projects__title">Amazon Clone Website</h2>
+
+                    <p class="projects__description">
+                        A responsive e-commerce clone of Amazon, built to practise clean layouts and UI/UX. The frontend base I will plug future AI features into.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://github.com/vineshniburani/amazonclone"target="_blank"   class="projects__link">
+                        <i class="ri-github-line"></i>View
+                    </a>
+
+                  
+                </div>
+            </article>
+            <article class="projects__card" data-project="portfolio">
+                <div class="projects__image">
+                    <img src="./assets/img/firstportfolio.png" alt="First basic portfolio screenshot" class="projects__image">
+
+                    <a href="#" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">Web / Where it began</h3>
+                    <h2 class="projects__title">First Basic Portfolio</h2>
+
+                    <p class="projects__description">
+                       My first portfolio, made with plain HTML and CSS. Every expert starts with a first commit.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://github.com/vineshniburani/amazonclone"target="_blank"   class="projects__link">
+                        <i class="ri-github-line"></i>View
+                    </a>
+
+                    
+                </div>
+            </article>
+            <!-- <article class="projects__card">
+                <div class="projects__image">
+                    <img src="./assets/img/project-1.jpg" alt="img" class="projects__image">
+
+                    <a href="#" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <div class="projects__content">
+                    <h3 class="projects__subtitle"></h3>
+                    <h2 class="projects__title"></h2>
+
+                    <p class="projects__description">
+                        Project that you carry out in the design 
+                        and structure of the layout, showing the 
+                        design at the client's request.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://github.com/"target="_blank"   class="projects__link">
+                        <i class="ri-github-line"></i>View
+                    </a>
+
+                    <a href="https://dribbble.com/"target="_blank"   class="projects__link">
+                        <i class="ri-dribbble-line"></i>View
+                    </a>
+                </div>
+            </article> -->
+            <!-- <article class="projects__card">
+                <div class="projects__image">
+                    <img src="./assets/img/project-1.jpg" alt="img" class="projects__image">
+
+                    <a href="#" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <div class="projects__content">
+                    <h3 class="projects__subtitle"></h3>
+                    <h2 class="projects__title"></h2>
+
+                    <p class="projects__description">
+                        Project that you carry out in the design 
+                        and structure of the layout, showing the 
+                        design at the client's request.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://github.com/"target="_blank"   class="projects__link">
+                        <i class="ri-github-line"></i>View
+                    </a>
+
+                    <a href="https://dribbble.com/"target="_blank"   class="projects__link">
+                        <i class="ri-dribbble-line"></i>View
+                    </a>
+                </div>
+            </article> -->
+            <!-- <article class="projects__card">
+                <div class="projects__image">
+                    <img src="./assets/img/project-1.jpg" alt="img" class="projects__image">
+
+                    <a href="#" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <div class="projects__content">
+                    <h3 class="projects__subtitle"></h3>
+                    <h2 class="projects__title"></h2>
+
+                    <p class="projects__description">
+                        Project that you carry out in the design 
+                        and structure of the layout, showing the 
+                        design at the client's request.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://github.com/"target="_blank"   class="projects__link">
+                        <i class="ri-github-line"></i>View
+                    </a>
+
+                    <a href="https://dribbble.com/"target="_blank"   class="projects__link">
+                        <i class="ri-dribbble-line"></i>View
+                    </a>
+                </div>
+            </article> -->
+         </div>
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__data">
+                        <h2 class="section__title-2">
+                            <span>Contact Me.</span>
+                        </h2>
+
+                        <p class="contact__description-1">
+                            Got an idea, a project or a problem nobody has solved yet? 
+                            Send it over. I read every message and reply.
+                        </p>
+                        <p class="contact__description-2">
+                            I need your <b>Name</b> and <b>Email Address</b>, but 
+                            you won't receive anything other than your reply.
+
+                        </p>
+
+                        <div class="geometric-box"></div>
+                </div>
+                <div class="contact__mail">
+                    <h2 class="contact__title">
+                        Send me a message
+                    </h2>
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__group">
+                            <div class="contact__box">
+                                <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
+                                <label for="name" class="contact__label">First Name</label>
+                            </div>
+                       
+                            <div class="contact__box">
+                                <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
+                                <label for="email" class="contact__label">Email Address</label>
+                            </div>
+                        </div>
+                            <div class="contact__box">
+                                <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+                                <label for="subject" class="contact__label">Subject</label>
+                            </div>
+
+                            <div class="contact__box contact__area">
+                                <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
+                                <label for="message" class="contact__label">Message</label>
+                            </div>
+                        
+                            <p class="contact__message" id="contact-message"></p>
+                        <button type="submit"  class="contact__button button">
+                            <i class="ri-send-plane-line"></i>Send Message
+                        </button>
+                    </form>
+
+                </div>
+                <div class="contact__social">
+                        <img src="./assets/img/curved-arrow.svg" alt="" class="contact__social-arrow">
+
+                        <div class="contact__social-data">
+                            <div>
+                                <p class="contact__social-description-1">
+                                  Form not working?
+                                </p>
+                                <p class="contact__social-description-2">
+                                    Find me on social
+                                </p>
+                            </div>
+
+                            <div class="contact__social-links">
+                                <a href="https://www.instagram.com/vinesh_niburani" target="_blank" class="contact__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <a href="https://github.com/vineshniburani" target="_blank" class="contact__social-link">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/vinesh-niburani/" target="_blank" class="contact__social-link">
+                                    <i class="ri-linkedin-box-line"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+<div class="footer__container container grid">
+    <ul class="footer__links">
+        <li>
+            <a href="#about" class="footer__link">About</a>
+        </li>
+        <li>
+            <a href="#services" class="footer__link">Achievements</a>
+        </li>
+        <li>
+            <a href="#projects" class="footer__link">Projects</a>
+        </li>
+    </ul>
+
+    <span class="footer__copy">
+        &#169; 2026 <a href="#">Vinesh Niburani</a>. Built with caffeine and curiosity.
+    </span>
+</div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./main.js"></script>
+</body>
+
+</html>
